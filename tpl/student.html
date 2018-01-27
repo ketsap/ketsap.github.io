@@ -1,0 +1,75 @@
+<student class="app-page">
+    <header class="header-bar">
+        <div class="left">
+            <button class="btn pull-left icon icon-arrow-back" data-navigation="$previous-page"></button>
+        </div>
+        <a class="btn pull-right icon icon-check action-save-student"></a>
+    </header>
+
+    <div class="content">
+        <div class="padded-full">
+            <div class="input-wrapper">
+                <input class="with-label" type="email" id="input-1">
+                <label class="floating-label student-id" for="input-1">Name</label>
+            </div>
+
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox0">
+                <span></span>
+                <span class="text">Inscription ok</span>
+            </label>
+
+            <ul class="list">
+                <li>
+                    <i class="pull-right icon icon-expand-less"></i>
+                    <a href="#link1" class="list">Participe aux cours suivants:</a>
+                    <div class="accordion-content" id="accordion-student-lessons">
+                        <ul class="list">
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox1">
+                                    <span></span>
+                                    <span class="text">Lundi</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox2">
+                                    <span></span>
+                                    <span class="text">Mercredi petits</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox3">
+                                    <span></span>
+                                    <span class="text">Mercredi grands</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox4">
+                                    <span></span>
+                                    <span class="text">Samedi petits</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox5">
+                                    <span></span>
+                                    <span class="text">Samedi grands</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="data-student-id"></div>
+        </div>
+    </div>
+</student>
+
+<script>
+    window.querySelector('.accordion-student-lessons').show()
+</script>
